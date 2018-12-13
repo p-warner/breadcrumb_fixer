@@ -1,0 +1,7 @@
+#mymodule.services.yml
+services:
+  breadcrumb_fixer.breadcrumb:
+    class: Drupal\breadcrumb_fixer\Breadcrumb\BreadcrumbFixerBreadcrumbBuilder
+    arguments: ['@router.request_context', '@access_manager', '@router', '@path_processor_manager', '@config.factory',  '@title_resolver', '@current_user', '@path.current', '@path.matcher']
+    tags:
+      - { name: breadcrumb_builder, priority: 100 }

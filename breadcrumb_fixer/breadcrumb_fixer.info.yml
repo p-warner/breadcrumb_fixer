@@ -1,0 +1,5 @@
+name: Breadcrumb Fixer
+type: module
+description: Creates breadcrumbs that account for routes that do not resolve.
+package: Penn College Modules
+core: 8.x
